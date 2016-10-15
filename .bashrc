@@ -12,7 +12,7 @@
 # User Info
 
 export USERNAME="SHEN CHENGGUANG"
-export NICKNAME="little sunshine"
+export NICKNAME="scg"
 
 # Distribute bashrc into smaller, more specific files
 
@@ -20,11 +20,12 @@ source .shells/defaults
 source .shells/functions
 #source .shells/exports
 source .shells/alias
+PS1='\[\e[1;32m\]\u@\h\[\e[m\]:\[\e[1;34m\]\W\[\e[1;33m\]\$\[\e[m\] '
 #source .shells/prompt   # Fancy prompt with time and current working dir
 source .shells/git      # Conveniences - Display current branch etc
 
 # Welcome message
-echo -ne "Good Morning, $NICKNAME! It's "; date '+%A, %B %-d %Y'
+echo -ne "Hello, $NICKNAME! Now is "; date +"%Y-%m-%d %H:%M:%S"
 
 #echo "Hardware Information:"
 #sensors  # Needs: 'sudo apt-get install lm-sensors'

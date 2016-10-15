@@ -2,7 +2,7 @@
 alias ls='ls --sort=extension --color=auto'
 alias ll='ls -lh'
 alias lal='ls -alh'
-alias la='ls -A'
+alias la='ls -la'
 alias pms='sudo pm-suspend'
 alias psg='ps -A | grep'
 alias se='sudo gvim'
